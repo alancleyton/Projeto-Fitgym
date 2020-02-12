@@ -16,6 +16,8 @@
     display: block;
     font-size: 30px;
     letter-spacing: 20px;
+    animation: moveFromTop 1.5s ease-out .30s;
+    animation-fill-mode: backwards;
 }
 
 .text-sub{
@@ -23,4 +25,31 @@
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 17.4px;
+    
+    animation: moveFromBottom 1.5s ease-out .50s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveFromTop{
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveFromBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

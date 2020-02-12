@@ -1,0 +1,26 @@
+.text-box{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+
+.text{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text-main{
+    display: block;
+    font-size: 30px;
+    letter-spacing: 20px;
+}
+
+.text-sub{
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 17.4px;
+}

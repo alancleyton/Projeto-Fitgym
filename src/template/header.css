@@ -1,18 +1,25 @@
 .header{
     height: 100vh;
-
     background: linear-gradient(
-        rgba(0, 0, 0, 0.500),
-        rgba(128, 128, 128, 0.400)),
-          url('../assets/img/training-woman.jpg');
+        rgba(20, 18, 18, 0.400),
+        rgba(87, 81, 81, 0.400)),
+          url('../assets/img/gym-woman.jpg');
 
     background-size: cover;
     background-position: top;
     position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
 }
 
-.header-box{
-    border: solid 1px #fff;
+.menu{
     max-width: 1024px;
     margin: 0 auto;
+    padding: 0 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }

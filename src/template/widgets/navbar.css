@@ -1,0 +1,20 @@
+.navbar{
+    padding-top: 20px;
+}
+
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar li{
+    margin: 10px 15px;
+    font-size: 1em;
+    display: block;
+}
+
+.navbar a{
+    font-weight: 200;
+    color: rgba(223, 211, 211, 0.5);
+}
+

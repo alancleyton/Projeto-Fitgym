@@ -1,0 +1,11 @@
+.logo{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    padding-top: 20px;
+}
+
+.logo a{
+    color: #fff;
+}

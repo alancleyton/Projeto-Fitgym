@@ -2,7 +2,7 @@ import './navbar.css';
 import React from 'react';
 
 export default props => (
-    <div className="navbar">
+    <div className="header__menu___menu--navbar">
         <ul>
             <li><a href="#/">Home</a></li>
             <li><a href="#/classes">Classes</a></li>

@@ -1,30 +1,30 @@
-.text-box{
+.header__text-box{
     position: absolute;
     top: 55%;
     left: 50%;
     transform: translate( -50%, -50%);
 }
 
-.text{
+.header__text-box___content{
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
 }
 
-.text-main{
+.header__text-box___content--main{
     display: block;
-    font-size: 30px;
-    letter-spacing: 20px;
+    font-size: 3rem;
+    letter-spacing: 2rem;
     animation: moveFromTop 1.5s ease-out .30s;
     animation-fill-mode: backwards;
 }
 
-.text-sub{
+.hedaer__text-box___content--sub{
     display: block;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 400;
-    letter-spacing: 17.4px;
+    letter-spacing: 1.75rem;
     
     animation: moveFromBottom 1.5s ease-out .50s;
     animation-fill-mode: backwards;
@@ -33,7 +33,7 @@
 @keyframes moveFromTop{
     0%{
         opacity: 0;
-        transform: translateY(-50px);
+        transform: translateY(-5rem);
     }
 
     100%{
@@ -45,7 +45,7 @@
 @keyframes moveFromBottom{
     0%{
         opacity: 0;
-        transform: translateY(50px);
+        transform: translateY(5rem);
     }
 
     100%{

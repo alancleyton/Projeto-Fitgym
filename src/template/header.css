@@ -13,10 +13,10 @@
 
 }
 
-.menu{
-    max-width: 1024px;
+.header__menu{
+    max-width: 102.4rem;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 1rem;
 
     display: flex;
     flex-wrap: wrap;

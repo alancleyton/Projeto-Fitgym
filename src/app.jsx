@@ -1,4 +1,3 @@
-import './app.css';
 import React, { Component } from 'react';
 
 import Header from './template/header';

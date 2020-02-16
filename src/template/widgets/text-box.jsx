@@ -1,4 +1,3 @@
-import './text-box.css';
 import React from 'react';
 
 export default props => (

@@ -1,0 +1,103 @@
+@keyframes moveFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-5rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes moveFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+  list-style: none;
+  outline: none;
+  text-decoration: none; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.7; }
+
+.header__text-box___content {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center; }
+
+.header__text-box___content--main {
+  display: block;
+  font-size: 3rem;
+  letter-spacing: 2rem;
+  animation: moveFromTop 1.5s ease-out .30s;
+  animation-fill-mode: backwards; }
+
+.hedaer__text-box___content--sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1.75rem;
+  animation: moveFromBottom 1.5s ease-out .50s;
+  animation-fill-mode: backwards; }
+
+.header__text-box {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.header__menu___logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  padding-top: 2rem; }
+
+.header__menu___logo a {
+  color: #fff; }
+
+.header__menu___menu--navbar {
+  padding-top: 2rem; }
+  .header__menu___menu--navbar ul {
+    display: flex;
+    flex-wrap: wrap; }
+  .header__menu___menu--navbar li {
+    margin: 1rem 1.5rem;
+    font-size: 1.8em;
+    display: block; }
+  .header__menu___menu--navbar a {
+    font-weight: 200;
+    color: #777; }
+  .header__menu___menu--navbar a:hover {
+    color: #fff; }
+
+.header {
+  height: 100vh;
+  background: linear-gradient(rgba(20, 18, 18, 0.4), rgba(87, 81, 81, 0.4)), url("../img/gym-woman.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+
+.header__menu {
+  max-width: 102.4rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }

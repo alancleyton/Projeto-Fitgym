@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --progress",
-    "production": "webpack --progress -p"
+    "production": "webpack --progress -p",
+    "scss": "node-sass src/assets/scss/main.scss src/assets/css/styles.css -w"
   },
   "keywords": [],
   "author": "",

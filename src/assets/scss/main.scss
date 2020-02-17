@@ -1,25 +1,13 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: inherit;
+@import './abstracts/functions';
+@import './abstracts/mixins';
+@import './abstracts/variables';
 
-    list-style: none;
-    outline: none;
-    text-decoration: none;
-}
+@import './base/animations';
+@import './base/reset';
+@import './base/typography';
 
-html{
-    font-size: 62.5%;
-}
+@import './components/textBox';
+@import './components/logo';
+@import './components/navBar';
 
-body{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    line-height: 1.7;
-    box-sizing: border-box;
-}
-
-@import './header.scss';
-@import './logo.scss';
-@import './navbar.scss';
-@import './textBox.scss';
+@import './layout/header';

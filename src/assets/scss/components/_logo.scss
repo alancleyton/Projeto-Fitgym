@@ -9,6 +9,9 @@
 .header__menu___logo {
 
     a{
-        color: #fff;
+        background-clip: text;
+        background-image: linear-gradient(to right, $color-white, $color-pink-dark);
+        -webkit-background-clip: text;
+        color: transparent;
     }
 }

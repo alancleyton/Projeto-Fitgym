@@ -7,18 +7,18 @@ import Fit3 from '../assets/img/fit3.jpg';
 export default () => (
     <section className="sobre">
         <div className="u-center-txt u-mb-big">
-            <h2 className="sobre--title">Faça parte de uma de nossas classes</h2>
+            <h2 className="sobre--title">O que nos fazemos aqui</h2>
         </div>
 
         <div className="sobre__content">
             <div className="sobre__content--text">
-                <h3 className="sobre__content--text-title u-mb-small">Treine com os melhore instrutores</h3>
-                <p className="sobre__content--text-paragraph">
+                <h3 className="third-text-title u-mb-small">Treine com os melhore instrutores</h3>
+                <p className="text-paragraph">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt amet dolore perferendis sit culpa quaerat fuga cum aut, perspiciatis officia nulla numquam sequi molestias reiciendis optio nisi asperiores consequatur? Amet.
                 </p>
 
-                <h3 className="sobre__content--text-title u-mb-small">Melhore o seu estilo de vida</h3>
-                <p className="sobre__content--text-paragraph">
+                <h3 className="third-text-title u-mb-small">Melhore o seu estilo de vida</h3>
+                <p className="text-paragraph">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel maxime nostrum odit incidunt quibusdam quam repellat.
                 </p>
             </div>

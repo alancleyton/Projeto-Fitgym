@@ -3,7 +3,7 @@
     padding: 15rem 0;
     background-color: $color-grey-light;    
     max-width: 102.4rem;
-    margin: -25vh auto;
+    margin: 0 auto;
 }
 
 .sobre__content{
@@ -20,5 +20,21 @@
     .sobre__content--images{
         flex: 1 28rem;
     }
+}
+
+.turmas{
+    margin: 0 auto;
+    height: 95vh;
+}
+
+.turmas__content{
+    padding: 0 1.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin: 10rem auto 0 auto;
+    max-width: 102.4rem;
 }
 

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Header from './template/header';
 import Sobre from './components/sobre';
+import Turmas from './components/turmas';
 
 
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
                 <Header/>
                 <main>
                     <Sobre/>
+                    <Turmas/>
                 </main>
             </div>
         );

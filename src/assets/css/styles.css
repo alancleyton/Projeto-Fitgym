@@ -66,13 +66,13 @@ body {
   -webkit-background-clip: text;
   color: transparent; }
 
-.sobre__content--text-title {
+.third-text-title {
   font-size: 1.8rem;
   text-transform: uppercase;
   font-weight: 700;
   color: #bd1153; }
 
-.sobre__content--text-paragraph {
+.text-paragraph {
   font-size: 1.6rem;
   color: #777;
   margin-bottom: 3rem; }
@@ -103,7 +103,10 @@ body {
   padding-top: 2rem; }
 
 .header__menu___logo a {
-  color: #fff; }
+  background-clip: text;
+  background-image: linear-gradient(to right, #fff, #bd1153);
+  -webkit-background-clip: text;
+  color: transparent; }
 
 .header__menu___menu--navbar {
   padding-top: 2rem; }
@@ -133,15 +136,26 @@ body {
       left: 0;
       top: -2rem; }
     .images__photo--p2 {
-      right: 0;
-      top: 2rem; }
+      top: 10rem;
+      right: 0; }
     .images__photo--p3 {
-      left: 20%;
-      top: 10rem; }
+      top: 20rem;
+      left: 20%; }
     .images__photo:hover {
       transform: scale(1.5);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
+
+.turmas-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  flex: 1 25rem;
+  display: inline-block;
+  margin: 0 2rem;
+  padding: 0 1rem;
+  text-align: center;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  .turmas-box__cover {
+    width: 100%; }
 
 .header {
   height: 100vh;
@@ -164,7 +178,7 @@ body {
   padding: 15rem 0;
   background-color: #f7f7f7;
   max-width: 102.4rem;
-  margin: -25vh auto; }
+  margin: 0 auto; }
 
 .sobre__content {
   display: flex;
@@ -176,3 +190,15 @@ body {
     margin-right: 2rem; }
   .sobre__content .sobre__content--images {
     flex: 1 28rem; }
+
+.turmas {
+  margin: 0 auto;
+  height: 95vh; }
+
+.turmas__content {
+  padding: 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10rem auto 0 auto;
+  max-width: 102.4rem; }

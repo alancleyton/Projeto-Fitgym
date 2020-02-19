@@ -26,10 +26,11 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #f7f7f7; }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7; }
 
@@ -53,6 +54,40 @@ body {
   letter-spacing: 1.75rem;
   animation: moveFromBottom 1.5s ease-out .50s;
   animation-fill-mode: backwards; }
+
+.sobre--title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  letter-spacing: .2rem;
+  background-clip: text;
+  background-image: linear-gradient(to right, #bd1153, #6e39a3);
+  -webkit-background-clip: text;
+  color: transparent; }
+
+.sobre__content--text-title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bd1153; }
+
+.sobre__content--text-paragraph {
+  font-size: 1.6rem;
+  color: #777;
+  margin-bottom: 3rem; }
+
+.u-center-txt {
+  text-align: center; }
+
+.u-mb-small {
+  margin-bottom: 1.5rem; }
+
+.u-mb-medium {
+  margin-bottom: 4rem; }
+
+.u-mb-big {
+  margin-bottom: 8rem; }
 
 .header__text-box {
   position: absolute;
@@ -85,9 +120,32 @@ body {
   .header__menu___menu--navbar a:hover {
     color: #fff; }
 
+.images {
+  position: relative; }
+  .images__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    position: absolute;
+    border-radius: 2px;
+    z-index: 10;
+    transition: all .2s; }
+    .images__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .images__photo--p2 {
+      right: 0;
+      top: 2rem; }
+    .images__photo--p3 {
+      left: 20%;
+      top: 10rem; }
+    .images__photo:hover {
+      transform: scale(1.5);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+
 .header {
   height: 100vh;
-  background: linear-gradient(rgba(20, 18, 18, 0.4), rgba(87, 81, 81, 0.4)), url("../img/gym-woman.jpg");
+  background: linear-gradient(rgba(110, 57, 163, 0.4), rgba(0, 0, 0, 0.4)), url("../img/gym-woman.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
@@ -101,3 +159,20 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center; }
+
+.sobre {
+  padding: 15rem 0;
+  background-color: #f7f7f7;
+  max-width: 102.4rem;
+  margin: -25vh auto; }
+
+.sobre__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 1.5rem; }
+  .sobre__content .sobre__content--text {
+    flex: 1 28rem;
+    margin-right: 2rem; }
+  .sobre__content .sobre__content--images {
+    flex: 1 28rem; }

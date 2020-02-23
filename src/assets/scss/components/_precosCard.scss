@@ -1,0 +1,77 @@
+.precos-card{
+    position: relative;
+    height: 50rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+    &--1{
+        height: 35rem;
+    }
+
+    &--2{
+        height: 40rem;
+    }
+
+    &--3{
+        height: 45rem;
+    }
+
+    &--4{
+        height: 50rem;
+    }
+
+    &__price-box{
+        background-image: linear-gradient(to right,
+        $color-purple-dark,
+        $color-black,
+        $color-pink-dark);
+        position: relative;
+        height: 15rem;
+    }
+
+    &__price-value{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $color-white;
+        font-size: 5rem;
+    }
+
+    &__details-box{
+        background-color: $color-white;
+
+        &--1{
+            height: 20rem;
+        }
+
+        &--2{
+            height: 25rem;
+        }
+
+        &--3{
+            height: 30rem;
+        }
+
+        &--4{
+            height: 35rem;
+        }
+
+
+
+        ul{
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li{
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child){
+                    border-bottom: 1px solid #eee;
+                }
+            }
+        }
+    }
+}

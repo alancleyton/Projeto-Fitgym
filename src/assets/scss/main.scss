@@ -7,12 +7,15 @@
 @import './base/typography';
 @import './base/ultilities';
 
+@import './components/buttons';
 @import './components/textBox';
 @import './components/logo';
 @import './components/navBar';
 @import './components/images';
 @import './components/tumrasBox';
+@import './components/precosCard';
 
 @import './layout/header';
+@import './layout/grid';
 
 @import './pages/home';

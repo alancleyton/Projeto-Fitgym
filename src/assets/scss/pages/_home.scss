@@ -6,35 +6,8 @@
     margin: 0 auto;
 }
 
-.sobre__content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 1.5rem;
-
-    .sobre__content--text{
-        flex: 1 28rem;
-        margin-right: 2rem;
-    }
-
-    .sobre__content--images{
-        flex: 1 28rem;
-    }
-}
-
 .turmas{
     margin: 0 auto;
-    height: 95vh;
-}
-
-.turmas__content{
-    padding: 0 1.5rem;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    margin: 10rem auto 0 auto;
-    max-width: 102.4rem;
+    height: 100vh;
 }
 

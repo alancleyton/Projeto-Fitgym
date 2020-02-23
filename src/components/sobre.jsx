@@ -7,11 +7,11 @@ import Fit3 from '../assets/img/fit3.jpg';
 export default () => (
     <section className="sobre">
         <div className="u-center-txt u-mb-big">
-            <h2 className="sobre--title">O que nos fazemos aqui</h2>
+            <h2 className="second-text-title">O que nos fazemos aqui</h2>
         </div>
 
-        <div className="sobre__content">
-            <div className="sobre__content--text">
+        <div className="row">
+            <div className="col-1-of-2">
                 <h3 className="third-text-title u-mb-small">Treine com os melhore instrutores</h3>
                 <p className="text-paragraph">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt amet dolore perferendis sit culpa quaerat fuga cum aut, perspiciatis officia nulla numquam sequi molestias reiciendis optio nisi asperiores consequatur? Amet.
@@ -23,7 +23,7 @@ export default () => (
                 </p>
             </div>
 
-            <div className="sobre__content--images">
+            <div className="col-1-of-2">
                 <div className="images">
                     <img src={Fit1} alt="imagem 1" className="images__photo images__photo--p1"/>
                     <img src={Fit2} alt="imagem 1" className="images__photo images__photo--p2"/>

@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Header from './template/header';
 import Sobre from './components/sobre';
 import Turmas from './components/turmas';
+import Precos from './components/precos';
 
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
                 <main>
                     <Sobre/>
                     <Turmas/>
+                    <Precos/>
                 </main>
             </div>
         );

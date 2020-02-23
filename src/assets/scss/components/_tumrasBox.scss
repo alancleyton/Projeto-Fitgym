@@ -1,13 +1,18 @@
 .turmas-box{
-    background-color: rgba($color-white, .8);
-    flex: 1 25rem;
+    background-color: rgba($color-white, .9);
+    font-size: 1.5rem;
     display: inline-block;
-    margin: 0 2rem;
-    padding: 0 1rem;
-    text-align: center;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    box-shadow: 0 2rem 8rem rgba($color-black, .15);
 
-    &__cover{
-        width: 100%;
+    &--cover{
+        img{
+            width: 100%;
+        }
     }
+
+    &--content{
+        padding: 1.5rem;
+        background-color: $color-white;
+    }
+
 }

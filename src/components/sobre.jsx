@@ -21,6 +21,9 @@ export default () => (
                 <p className="text-paragraph">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel maxime nostrum odit incidunt quibusdam quam repellat.
                 </p>
+
+                <a href="#" className="btn-text">Ler mais</a>
+
             </div>
 
             <div className="col-1-of-2">

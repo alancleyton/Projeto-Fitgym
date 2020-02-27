@@ -1,0 +1,60 @@
+.comments-box{
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    border-radius: 3px;
+    padding: 6rem;
+    font-size: $small-font-size;
+    transform: skewX(-13deg);
+    
+    background: linear-gradient(to right,
+    $color-purple-dark,
+    $color-black,
+    $color-pink-dark);
+
+
+    &__perfil{
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        shape-outside: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        transform: translateX(-2rem) skewX(13deg);
+    }
+
+    &__img{
+        height: 100%;
+        width: 100%;
+        transform: scale(1.5);
+        transition: all .5s;
+    }
+
+    &__text{
+        transform: skewX(13deg);
+    }
+
+    &__perfil-name{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        text-transform: uppercase;
+        color: $color-white;
+        font-size: 1.7rem;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden;
+    }
+
+    
+    &:hover &__perfil-name{
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img{
+        transform: scale(1);
+        filter: blur(3px) brightness(80%); 
+    }
+}

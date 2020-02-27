@@ -48,7 +48,7 @@
         }
     }
     
-    &::after{
+    &:after{
         content: "";
         display: inline-block;
         height: 100%;
@@ -72,16 +72,16 @@
     &:link,
     &:visited{
         font-size: 1.5rem;
-        color: $color-white;
+        color: $color-purple-dark;
         display: inline-block;
         text-decoration: none;
-        border-bottom: 1px solid $color-white;
+        border-bottom: 1px solid $color-purple-dark;
         padding: 3px;
         transition: all .2s;
     }
 
     &:hover{
-        background-color: $color-white;
+        background-color: $color-purple-dark;
         color: $color-white;
         box-shadow: 0 1rem 2rem rgba($color-black, .15);
         transform: translateY(-2px);

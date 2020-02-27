@@ -55,5 +55,9 @@ export default props => (
                 </div>
             </div>
         </div>
+
+         <div className="u-center-txt u-mb-big">
+            <a href="#" className="btn-text">Ver todas as Turmas</a>
+        </div>
     </section>
 );

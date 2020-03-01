@@ -1,10 +1,38 @@
 // Section Sobre
-.sobre{
+.section-sobre{
     padding: 15rem 0;
     max-width: 102.4rem;
     margin: 0 auto;
 }
 
-.turmas{
+.section-turmas{
     margin: 0 auto;
+}
+
+.section-testemunhos{
+    padding: 15rem 0;
+}
+
+
+.section-assinar{
+    padding: 15rem 0;
+    background: linear-gradient( to right bottom, $color-black, $color-purple-dark);
+}
+
+.assinar{
+    background-image: linear-gradient(100deg,
+     rgba($color-white, .9) 0%,
+     rgba($color-white, .9) 50%,
+     transparent 50%),
+     url('../img/gym-man2.jpg');
+     
+    background-size: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2) ;
+    height: 50rem;
+
+    &__form{
+        width: 50%;
+        padding: 6rem;
+    }
 }

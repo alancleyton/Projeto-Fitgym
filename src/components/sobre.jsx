@@ -5,7 +5,7 @@ import Fit3 from '../assets/img/fit3.jpg';
 
 
 export default () => (
-    <section className="sobre">
+    <section className="section-sobre">
         <div className="u-center-txt u-mb-big">
             <h2 className="second-text-title">O que nos fazemos aqui</h2>
         </div>

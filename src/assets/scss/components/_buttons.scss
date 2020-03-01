@@ -1,54 +1,57 @@
-.btn{
-    &:link, &:visited{
+.btn {
+    &,
+    &:link,
+    &:visited {
         text-transform: uppercase;
         text-decoration: none;
         padding: 1.5rem 4rem;
         display: inline-block;
         border-radius: 10rem;
-        outline: none;
         transition: all .2s;
         position: relative;
-        font-size: 1.5rem;
-        color: $color-black;
-        background-color: $color-white;
+        font-size: $small-font-size;
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
     }
     
-    &:hover{
+    &:hover {
         transform: translateY(-3px);
         box-shadow: 0 1rem 2rem rgba($color-black,.2);
 
-        &::after{
+        &::after {
             transform: scaleX(1.4) scaleY(1.6);
             opacity: 0;
         }
     }
     
-    &:active{
+    &:active,
+    &:focus {
+        outline: none;
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba($color-black,.2);
     }
     
-    &--white{
+    &--white {
         background-color: $color-white;
-        color: #777;
-        margin-top: 6rem;
+        color: $color-grey-dark;
 
-        &::after{
+        &::after {
             background-color: $color-white;
         }
     }
 
-    &--white{
-        background-color: $color-white;
+    &--purple {
+        background-color: $color-purple-dark;
         color: $color-white;
-        margin-top: 6rem;
 
-        &::after{
-            background-color: $color-white;
+        &::after {
+            background-color: $color-purple-dark;
         }
     }
     
-    &:after{
+    &::after {
         content: "";
         display: inline-block;
         height: 100%;
@@ -61,17 +64,16 @@
         transition: all .4s;
     }
     
-    &--animated{
-        animation: moveFromBottom .8s ease-out 1.5s;
+    &--animated {
+        animation: moveFromBottom .5s ease-out .75s;
         animation-fill-mode: backwards;
-    }   
+    }
 }
 
-.btn-text{
-
+.btn-text {
     &:link,
-    &:visited{
-        font-size: 1.5rem;
+    &:visited {
+        font-size: $small-font-size;
         color: $color-purple-dark;
         display: inline-block;
         text-decoration: none;
@@ -80,14 +82,14 @@
         transition: all .2s;
     }
 
-    &:hover{
+    &:hover {
         background-color: $color-purple-dark;
         color: $color-white;
         box-shadow: 0 1rem 2rem rgba($color-black, .15);
         transform: translateY(-2px);
     }
 
-    &:active{
+    &:active {
         box-shadow: 0 .5rem 1rem rgba($color-black, .15);
         transform: translateY(0);
     }

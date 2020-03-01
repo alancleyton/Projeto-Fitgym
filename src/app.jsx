@@ -5,6 +5,7 @@ import Sobre from './components/sobre';
 import Turmas from './components/turmas';
 import Precos from './components/precos';
 import Testemunhos from './components/testemunhos';
+import Assinar from './components/assinar';
 
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
                     <Turmas/>
                     <Precos/>
                     <Testemunhos/>
+                    <Assinar/>
                 </main>
             </div>
         );

@@ -6,6 +6,7 @@ import Turmas from './components/turmas';
 import Precos from './components/precos';
 import Testemunhos from './components/testemunhos';
 import Assinar from './components/assinar';
+import Footer from './template/footer';
 
 
 class App extends Component {
@@ -20,6 +21,7 @@ class App extends Component {
                     <Testemunhos/>
                     <Assinar/>
                 </main>
+                <Footer/>
             </div>
         );
     }

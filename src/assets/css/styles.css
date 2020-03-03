@@ -360,6 +360,97 @@ body {
   visibility: hidden;
   transform: translateY(-4rem); }
 
+.navegation__checkbox {
+  display: none; }
+
+.navegation__button {
+  background-color: #fff;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  left: 6rem;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer; }
+
+.navegation__nav {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  background-color: #000;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.navegation__list {
+  list-style: none;
+  text-align: center;
+  padding-top: 20rem; }
+
+.navegation__item {
+  margin: 1rem; }
+
+.navegation__link:link, .navegation__link:visited {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(100deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 220%;
+  transition: all .4s; }
+
+.navegation__link:hover, .navegation__link:active {
+  background-position: 100%;
+  color: #6e39a3;
+  transform: translateX(1rem); }
+
+.navegation__checkbox:checked ~ .navegation__nav {
+  opacity: 1;
+  width: 25%; }
+
+.navegation__icon {
+  position: relative;
+  margin-top: 3.5rem; }
+  .navegation__icon, .navegation__icon::before, .navegation__icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #333;
+    display: inline-block; }
+  .navegation__icon::before, .navegation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s; }
+  .navegation__icon::before {
+    top: -.8rem; }
+  .navegation__icon::after {
+    top: .8rem; }
+
+.navegation__button:hover .navegation__icon::before {
+  top: -1.5rem; }
+
+.navegation__button:hover .navegation__icon::after {
+  top: 1.5rem; }
+
+.navegation__checkbox:checked + .navegation__button .navegation__icon {
+  background-color: transparent; }
+
+.navegation__checkbox:checked + .navegation__button .navegation__icon::before {
+  top: 0;
+  transform: rotate(135deg); }
+
+.navegation__checkbox:checked + .navegation__button .navegation__icon::after {
+  top: 0;
+  transform: rotate(-135deg); }
+
 .header {
   height: 100vh;
   background: linear-gradient(rgba(110, 57, 163, 0.4), rgba(0, 0, 0, 0.4)), url("../img/gym-woman.jpg");

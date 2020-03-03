@@ -22,6 +22,10 @@ export default () => (
                                 <li>Acesso a todas as turmas</li>
                                 <li>Acompanhamento do instrutor</li>
                             </ul>
+
+                            <div className="u-center-txt u-mb-big">
+                                <a href="#popup" className="btn-text">Assinar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -43,6 +47,10 @@ export default () => (
                                 <li>Acompanhamento do instrutor</li>
                                 <li>Acompanhamento do Nutricionista</li>
                             </ul>
+
+                            <div className="u-center-txt u-mb-big">
+                                <a href="#popup" className="btn-text">Assinar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -65,6 +73,10 @@ export default () => (
                                 <li>Acompanhamento do Nutricionista</li>
                                 <li>Acompanhamento médico</li>
                             </ul>
+
+                            <div className="u-center-txt u-mb-big">
+                                <a href="#popup" className="btn-text">Assinar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -88,6 +100,10 @@ export default () => (
                                 <li>Acompanhamento médico</li>
                                 <li>Acesso privado</li>
                             </ul>
+
+                            <div className="u-center-txt u-mb-big">
+                                <a href="#popup" className="btn-text">Assinar</a>
+                            </div>
                         </div>
                     </div>
                 </div>

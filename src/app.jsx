@@ -8,6 +8,7 @@ import Precos from './components/precos';
 import Testemunhos from './components/testemunhos';
 import Assinar from './components/assinar';
 import Footer from './template/footer';
+import PopUp from './template/widgets/popup';
 
 
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
                     <Assinar/>
                 </main>
                 <Footer/>
+                <PopUp/>
             </div>
         );
     }

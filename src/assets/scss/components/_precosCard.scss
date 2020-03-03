@@ -4,19 +4,19 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
     &--1{
-        height: 35rem;
-    }
-
-    &--2{
         height: 40rem;
     }
 
-    &--3{
+    &--2{
         height: 45rem;
     }
 
-    &--4{
+    &--3{
         height: 50rem;
+    }
+
+    &--4{
+        height: 55rem;
     }
 
     &__price-box{
@@ -41,19 +41,19 @@
         background-color: $color-white;
 
         &--1{
-            height: 20rem;
-        }
-
-        &--2{
             height: 25rem;
         }
 
-        &--3{
+        &--2{
             height: 30rem;
         }
 
-        &--4{
+        &--3{
             height: 35rem;
+        }
+
+        &--4{
+            height: 40rem;
         }
 
 

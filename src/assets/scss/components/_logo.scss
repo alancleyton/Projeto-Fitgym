@@ -4,6 +4,20 @@
     text-transform: uppercase;
     letter-spacing: 1rem;
     padding-top: 2rem;
+    margin-left: 4rem;
+
+    @include response(tab-land){
+        margin-left: 10rem;
+    }
+
+    @include response(tab-port){
+        margin-left: 15rem;
+    }
+
+
+    @include response(phone){
+        margin: 0 auto;
+    }
 }
 
 .header__menu___logo {
@@ -17,5 +31,6 @@
         
         -webkit-background-clip: text;
         color: transparent;
+
     }
 }

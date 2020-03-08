@@ -4,7 +4,7 @@ import Crossfit from '../assets/img/crossfit.png';
 import Hiit from '../assets/img/hiit.jpg';
 
 export default props => (
-    <section className="section-turmas">
+    <section className="section-turmas" id="turmas">
         <div className="u-center-txt u-mb-big">
             <h2 className="second-text-title">Faça parte de uma de nossas Turmas</h2>
         </div>

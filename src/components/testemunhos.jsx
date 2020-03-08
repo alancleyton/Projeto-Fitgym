@@ -3,7 +3,7 @@ import Woman1 from '../assets/img/woman1.jpg';
 import Man1 from '../assets/img/man1.jpg';
 
 export default () => (
-    <section className="testemunhos">
+    <section className="testemunhos" id="testemunhos">
         <div className="bg-testemunhos">
             <div className="u-center-txt u-mb-big">
                 <h2 className="second-text-title">O que estão fanlando sobre nós</h2>

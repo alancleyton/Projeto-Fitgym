@@ -17,6 +17,16 @@
         text-align: center;
         cursor: pointer;
 
+        @include response(tab-port){
+            top: 6rem;
+            left: 3rem;
+        }
+
+        @include response(phone){
+            top: 6rem;
+            left: 1rem;
+        }
+
     }
 
     &__nav{
@@ -70,6 +80,10 @@
     &__checkbox:checked ~ &__nav{
         opacity: 1;
         width: 25%;
+
+        @include response(phone){
+            width: 100%;
+        }
     }
 
     &__icon{

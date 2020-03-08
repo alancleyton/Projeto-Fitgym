@@ -16,6 +16,10 @@
         width: 90%;
         display: block;
 
+        @include response(phone){
+            width: 100%;
+        }
+
         &:focus{
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black, .1);

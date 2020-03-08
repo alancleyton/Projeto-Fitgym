@@ -5,3 +5,21 @@
         clear: both;
     }
 }
+
+@mixin response($screen) {
+    @if $screen == phone{
+        @media (max-width: 37.5em){ @content };  // 600px/16px == 600px
+    }
+
+    @if $screen == tab-port{
+        @media (max-width: 56.25em){ @content };  // 900px/16px == 900px
+    }
+
+    @if $screen == tab-land{
+        @media (max-width: 75em){ @content }; // 1200px/16px == 1200px
+    }
+
+    @if $screen == big-desktop{
+        @media (min-width: 112.5em){ @content }; //1800px/16px == 1800px
+    }
+}

@@ -3,6 +3,10 @@
     padding: 15rem 0;
     max-width: 102.4rem;
     margin: 0 auto;
+
+    @include response(tab-port){
+        padding: 10rem 0;
+    }
 }
 
 .section-turmas{
@@ -11,12 +15,27 @@
 
 .section-testemunhos{
     padding: 15rem 0;
+
+    @include response(tab-port){
+        padding: 10rem 0;
+    }
+}
+
+.precos{
+    background-image: linear-gradient(to right,
+     rgba($color-white, .9) 0%,
+     rgba($color-white, .9) 50%),
+     url('../img/gym-man2.jpg');
 }
 
 
 .section-assinar{
     padding: 15rem 0;
     background: linear-gradient( to right bottom, $color-black, $color-purple-dark);
+
+    @include response(tab-port){
+        padding: 10rem 0;
+    }
 }
 
 .assinar{
@@ -29,10 +48,34 @@
     background-size: 100%;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .2) ;
-    height: 50rem;
+
+    @include response(tab-land){
+        background-image: linear-gradient(100deg,
+        rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 65%,
+        transparent 65%),
+        url('../img/gym-man2.jpg');
+
+        background-size: cover;
+     }
+
+     @include response(tab-port){
+        background-image: linear-gradient(to right,
+        rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 100%,),
+        url('../img/gym-man2.jpg');
+    }
 
     &__form{
         width: 50%;
         padding: 6rem;
+
+        @include response(tab-land){
+            width: 65%;
+        }
+
+        @include response(tab-port){
+            width: 100%;
+        }
     }
 }

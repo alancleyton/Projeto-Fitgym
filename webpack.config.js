@@ -28,7 +28,7 @@ module.exports = {
         htmlPlugin,
 
         new MiniCssExtractPlugin({
-            filename: 'styles.css'
+            filename: 'main-styles.css'
         })
     ],
 

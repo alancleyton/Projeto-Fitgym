@@ -4,6 +4,7 @@
     box-shadow: 0 3rem 6rem rgba($color-black, .1);
     border-radius: 3px;
     padding: 6rem;
+    padding-left: 9rem;
     font-size: $small-font-size;
     transform: skewX(-13deg);
     
@@ -11,6 +12,16 @@
     $color-purple-dark,
     $color-black,
     $color-pink-dark);
+
+    @include response(tab-port){
+        width: 100%;
+        padding: 3rem;
+        padding-left: 6rem;
+    }
+
+    @include response(phone){
+        transform: skewX(0);
+    }
 
 
     &__perfil{
@@ -20,6 +31,10 @@
         shape-outside: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
         transform: translateX(-2rem) skewX(13deg);
+
+        @include response(phone){
+            transform: translateX(-2rem) skewX(0)
+        }
     }
 
     &__img{
@@ -31,6 +46,10 @@
 
     &__text{
         transform: skewX(13deg);
+
+        @include response(phone){
+            transform: skewX(0)
+        }
     }
 
     &__perfil-name{

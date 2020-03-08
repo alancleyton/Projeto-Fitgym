@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack-dev-server --progress",
     "production": "webpack --progress -p",
-    "scss": "node-sass src/assets/scss/main.scss src/assets/css/styles.css -w"
+    "watch:scss": "node-sass src/assets/scss/main.scss src/assets/css/styles.css -w",
+    "compress:css": "node-sass src/assets/css/styles.css src/assets/css/main-styles.css --output-style compressed"
   },
   "keywords": [],
   "author": "",
@@ -14,8 +15,10 @@
   "devDependencies": {
     "babel-core": "6.26.3",
     "babel-loader": "7.1.5",
+    "babel-plugin-transform-object-assign": "6.22.0",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-preset-env": "1.7.0",
+    "babel-preset-es2015": "6.24.1",
     "babel-preset-react": "6.24.1",
     "bootstrap": "4.4.1",
     "css-loader": "3.4.2",
@@ -32,5 +35,8 @@
     "webpack": "4.41.6",
     "webpack-cli": "3.3.10",
     "webpack-dev-server": "3.10.3"
+  },
+  "dependencies": {
+    "react-scroll": "1.7.16"
   }
 }

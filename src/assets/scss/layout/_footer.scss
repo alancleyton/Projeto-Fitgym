@@ -9,6 +9,11 @@
         border-top: solid 1px $color-grey-dark;
         padding-top: 2rem;
         display: inline-block;
+
+        @include response(tab-port){
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &__list{
@@ -48,6 +53,11 @@
         padding-top: 2rem;
         width: 80%;
         float: right;
+
+        @include response(tab-port){
+            width: 100%;
+            float: none;
+        }
     }
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default () => (
-    <section className="precos">
+    <section className="precos u-mb-big" id="precos">
         <div className="u-center-txt u-mb-big">
             <h2 className="second-text-title">Conheça nossos planos</h2>
         </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default props => (
-    <section className="section-assinar">
+    <section className="section-assinar" id="assinar">
         <div className="row">
             <div className="assinar">
                 <div className="assinar__form">
